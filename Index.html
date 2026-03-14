@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Bestest Friend ✨</title>
+    <style>
+        body { font-family: sans-serif; background: #fff5f8; text-align: center; padding: 50px; }
+        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); display: inline-block; }
+        textarea { width: 300px; height: 100px; border-radius: 10px; border: 1px solid #ffccd5; padding: 10px; }
+        button { background: #ff4d6d; color: white; border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; margin-top: 10px; }
+        #video-container { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Simmy's Magic Box 🎁</h1>
+        <p>Turning our memories into magic...</p>
+        <textarea id="prompt" placeholder="Describe our BGMI win or our meeting..."></textarea><br>
+        <button onclick="generate()">Create Video ✨</button>
+        <div id="status"></div>
+        <div id="video-container"></div>
+    </div>
+
+    <script>
+        async function generate() {
+            const prompt = document.getElementById('prompt').value;
+            const status = document.getElementById('status');
+            status.innerText = "Connecting to AI... (Please wait, this is free!)";
+
+            // Note: In a real app, we use a 'Backend' to hide your key. 
+            // For a quick birthday gift, we'll keep it simple.
+            alert("Step 3 Complete! Now we just need to connect the hosting.");
+        }
+    </script>
+</body>
+</html>
